@@ -1,21 +1,15 @@
 const CACHE_NAME = 'v1_cache_matriculas_umma';
-const urlsToCache = [
-    '/',
-    '/img/perfil.jpg',
-    '/estilos/style.css',
-    '/script/lectorqr.js'
-];
+const dataCache=['./index.html',
+    './img/perfil.jpg',
+    './estilos/style.css',
+    './script/lectorqr.js'
+]
 
 //durante la fase de instalación, generalmente se almacena en caché los activos estáticos
 self.addEventListener('install', e => {
-    e.waitUntil(
-        caches.open(CACHE_NAME)
-            .then(cache => {
-                return cache.addAll(urlsToCache)
-                    .then(() => self.skipWaiting())
-            })
-            .catch(err => console.log('Falló registro de cache', err))
-    )
+    caches.open(CACHE_NAME).then(cache => {
+            cache.addAll(dataCache)
+    });
 })
 
 //una vez que se instala el SW, se activa y busca los recursos para hacer que funcione sin conexión
