@@ -6,7 +6,7 @@ const urlsToCache = [
       '/img/perfil.jpg',
       '/estilos/style.css',
       '/script/lectorqr.js',
-  ]
+  ];
 
 //durante la fase de instalación, generalmente se almacena en caché los activos estáticos
 self.addEventListener('install', e => {
