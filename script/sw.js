@@ -7,10 +7,10 @@ const CACHE_NAME = 'v1_cache_programador_fitness',
     'https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwJYtWqZPAA.woff2',
     'https://use.fontawesome.com/releases/v5.0.7/css/all.css',
     'https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.woff2',
-    './style.css',
-    './script.js',
-    './img/ProgramadorFitness.png',
-    './img/favicon.png'
+    './estilos/style.css',
+    './script/lectorqr.js',
+    './script/script.js',
+    './img/perfil',
   ]
 
 //durante la fase de instalación, generalmente se almacena en caché los activos estáticos
