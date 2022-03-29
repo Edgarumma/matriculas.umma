@@ -14,6 +14,11 @@
       "src": "./img/perfil.jpg",
       "sizes": "260x260",
       "type": "image/jpg"
+    },
+    {
+      "src": "./img/perfil_144.jpg",
+      "sizes": "144x144",
+      "type": "image/png"
     }
   ]
 }
