@@ -1,0 +1,19 @@
+{
+  "name": "Matriculas.UMMA",
+  "short_name": "Matriculas.UMMA",
+  "description": "BIENVENIDOS A ESTA APP ",
+  "background_color": "#2B2B2B",
+  "theme_color": "#F0DB4F",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "./?utm_source=web_app_manifest",
+  "scope": "./",
+  "lang": "es-MX",
+  "icons": [
+    {
+      "src": "./img/perfil.jpg",
+      "sizes": "260x260",
+      "type": "image/jpg"
+    }
+  ]
+}

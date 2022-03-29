@@ -1,0 +1,21 @@
+/* Custom Properties */
+:root {
+  --main-color: #F0DB4F;
+  --main-modal-color: rgba(240, 219, 79, .5);
+  --second-color: #2B2B2B;
+  --second-modal-color: rgba(43, 43, 43, .5);
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--second-color);
+  background-color: var(--main-modal-color);
+}
+body, input {font-size:14pt}
+input, label {vertical-align:middle}
+.qrcode-text {padding-right:1.7em; margin-right:0}
+.qrcode-text-btn {display:inline-block; background:url(//dab1nmslvvntp.cloudfront.net/wp-content/uploads/2017/07/1499401426qr_icon.svg) 50% 50% no-repeat; height:1em; width:1.7em; margin-left:-1.7em; cursor:pointer}
+.qrcode-text-btn > input[type=file] {position:absolute; overflow:hidden; width:1px; height:1px; opacity:0}
