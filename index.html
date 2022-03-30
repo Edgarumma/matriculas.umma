@@ -47,10 +47,17 @@
   </header>
   <section>
     <div>
+      <label for="nombreEventos">Nombre del evento</label>
+      <select id="nombreEventos">
+       <option value="">Vacio</option>
+      </select>
       <label for="mostrarMatricula">Matricula</label>
       <input id="mostrarMatricula" type=text size=16 placeholder="Tracking Code" class=qrcode-text>
       <label class=qrcode-text-btn><input type=file accept="image/*" capture=environment onclick="return showQRIntro();" onchange="openQRCamera(this);" tabindex=-1></label>
-      <input type=button value="Go" disabled>
+      <input type=button value="Go" id="guardar">
+      <div id="datosAlumnos">
+        <ul id="listaAlumnos"></ul>
+      </div>
     </div>
   </section>
   <script src="./sw.js"></script>
