@@ -29,12 +29,14 @@ function alumnos(data){
         let rowCells = allRows[i].split(',');
         arregloAlumnos.push(rowCells);
     }
+    console.log(arregloAlumnos);
 }
 function busquedaInput(){
     let input=document.querySelector('#mostrarMatricula').value.toUpperCase();
     filtrar(input)
 }
 function filtrar(matricula){
+    console.log("filter");
     listaAlumnos.innerHTML='';
     arregloAlumnos.forEach(function (value){
         if (value[0].includes(matricula)){
