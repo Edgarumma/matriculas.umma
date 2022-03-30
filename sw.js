@@ -7,9 +7,13 @@ const dataCache=['./index.html',
 
 //durante la fase de instalación, generalmente se almacena en caché los activos estáticos
 self.addEventListener('install', e => {
-    caches.open(CACHE_NAME).then(cache => {
-            cache.addAll(dataCache)
-    });
+    e.waitUntil(
+        caches.open(CACHE_NAME).then(cache => {
+                cache.addAll(dataCache)
+
+        })
+    );
+
 })
 
 //una vez que se instala el SW, se activa y busca los recursos para hacer que funcione sin conexión
