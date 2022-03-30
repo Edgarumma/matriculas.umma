@@ -44,6 +44,6 @@ function filtrar(matricula){
         }
     })
 }
-document.getElementById('mostrarMatricula').addEventListener('keyup',filtrar);
+document.getElementById('mostrarMatricula').addEventListener('keyup',busquedaInput);
 
 
