@@ -33,6 +33,6 @@ var_dump($_POST);
     } else {
         echo "El archivo $nombre_archivo no es escribible";
     }
-header('location: /index.html');
+header('location: ./index.html');
 }
 
